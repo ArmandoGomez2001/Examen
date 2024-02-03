@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFL</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #menu {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  #resultados {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+<h1>Gestión de Pendientes</h1>
+<div id="menu">
+  <button onclick="obtenerIDs()">Mostrar lista de todos los pendientes (Solo ID's)</button>
+  <button onclick="obtenerIDsYTitulos()">Mostrar lista de todos los pendientes (ID's y títulos)</button>
+  <button onclick="obtenerPendientesSinResolver()">Mostrar lista de todos los pendientes sin resolver (ID y título)</button>
+  <button onclick="obtenerPendientesResueltos()">Mostrar lista de todos los pendientes resueltos (ID y título)</button>
+  <button onclick="obtenerIDsYUsuarios()">Mostrar lista de todos los pendientes (ID y userId)</button>
+  <button onclick="obtenerPendientesResueltosConUsuarios()">Mostrar lista de todos los pendientes resueltos (ID y userId)</button>
+  <button onclick="obtenerPendientesSinResolverConUsuarios()">Mostrar lista de todos los pendientes sin resolver (ID y userId)</button>
+</div>
+
+<div id="resultados"></div>
+
+<script src="Examen.js">
+ 
+</script>
+</body>
+</html>
