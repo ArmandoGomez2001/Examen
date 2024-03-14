@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFL</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Gestión de Pendientes</h1>
+      <img src="img/" class="logo-img">
+      <ul class="nav-links">
+        <li><a href="#" onclick="obtenerIDs()">Mostrar solo IDs</a></li>
+        <li><a href="#" onclick="obtenerIDsYTitulos()">Mostrar IDs y títulos</a></li>
+        <li><a href="#" onclick="obtenerPendientesSinResolver()">Pendientes sin resolver</a></li>
+        <li><a href="#" onclick="obtenerPendientesResueltos()">Pendientes resueltos</a></li>
+        <li><a href="#" onclick="obtenerIDsYUsuarios()">IDs y usuarios</a></li>
+        <li><a href="#" onclick="obtenerPendientesResueltosConUsuarios()">Pendientes resueltos con usuarios</a></li>
+        <li><a href="#" onclick="obtenerPendientesSinResolverConUsuarios()">Pendientes sin resolver con usuarios</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div id="resultados" class="container"></div>
+
+<script src="js/Examen.js"></script>
+<script src="js/app.js"></script>
+<script src="sw.js"></script>
+</body>
+</html>
