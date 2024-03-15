@@ -30,7 +30,7 @@ self.addEventListener('fetch', event => {
     const dataModificado = data.map(pendiente => {
       return {
         ...pendiente,
-        id: `${pendiente.id} NFL`,
+        id: `${pendiente.id} @`,
       };
     });
     return new Response(JSON.stringify(dataModificado), {
